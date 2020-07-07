@@ -2,122 +2,146 @@
 body{
 	font-family: 'Noto Sans JP', sans-serif;
 	max-width: 968px;
-	background: #170A1C;
-	color: white;
+	background:url("../img/greek-vase.png") repeat;
 	text-align: center;
 }
 h1{
-	margin:0 auto;
+	margin:0;
+	color:#7b7d70;
+}
+
+h2{
+	font-size:20px;
+	color:#4eafb8;
+}
+
+p{
+	color:#ff8641;
+}
+
+.box2{
+	padding:0 50px 0 0;
 }
 
 
-/************* the grid ***********/
-body section{
-	display:inline-block;
+/************* header ***********/
+
+header{
+	font-variant:small-caps;
+	width:100%;
 }
+
 section.one{
-	float:left;
-	clear:left;
-	padding:40px 0 0 25px;
-}
-.box-1{
-	padding:0 0;
-	margin:0 auto;
+	font-size:15px;
+	text-align:left;
+	padding:0 0 0 10px;
 }
 
 section.two{
-	float:left;
-	clear:left;
-	padding:40px 0 0 75px;
-}
-.box-2{
-	padding:0;
-	margin:0 auto;
+	text-align:left;
+	padding:30px 0 0 60px;
 }
 
 section.three{
-	float:left;
-	clear:left;
-	padding:40px 0 0 125px;
-}
-.box-3{
-	padding:0 0;
-	margin:0 auto;
-}
-
-section.four{
-	float:left;
-	clear:left;
-	padding:40px 0 0 50px;
-}
-.box-4{
-	padding:0 0;
-	margin:0 auto;
-}
-
-section.five{
-	float:left;
-	clear:left;
-	padding:40px 0 0 50px;
-}
-.box-5{
-	padding:0 0;
-	margin:0 auto;
-}
-
-section.six{
-	float:left;
-	clear:left;
-	padding:40px 0 0 130px;
-}
-.box-6{
-	padding:0 0;
-	margin:0 auto;
-}
-
-section.seven{
-	float:left;
-	clear:left;
-	padding:40px 0 0 175px;
-}
-.box-7{
-	padding:0 0;
-	margin:0 auto;
-}
-
-section.eight{
-	float:left;
-	clear:left;
-	padding:40px 0 0 40px;
-}
-.box-8{
 	font-family: 'Dancing Script', cursive;
-	font-size: 50px;
+	font-size:35px;
 	color: #0B7189;
-	text-align: right;
-	padding:0;
+	text-align:right;
+	padding:30px 60px 0 0;
 	margin:0 auto;
 	font-weight:lighter;
 }
 
-section.nine{
-	float:left;
-	clear:left;
-	padding:40px 0 0 200px;
-}
-.box-9{
-	padding:0 0;
-	margin:0 auto;
+section.four{
+	text-align:right;
+	padding:10px 25px 0 0;
 }
 
-/* ----------- Tablets larger than 768px wide ----------- */
-@media (min-width: 768px) {
-	body {
-    background: gold;
-  }
+/****************** main *****************/
+
+main{
+	margin:50px auto;
 }
+
+.entries{
+	margin:25px auto;
+	border:5px double gold;
+	width:75%;
+}
+
+
+/* ----------- Tablets larger than 768px wide ----------- */
+
+@media (min-width: 440px) {
+	header{
+		width:100%;
+		margin:0 auto;
+		max-width: 440px;
+	}
+
+	.box1{
+		float:left;
+	}
+
+	.box2{
+		float:right;
+	}
+
+main{
+	clear:both;
+}
+
+	h1{
+		margin:0;
+		color:#02cbd2;
+	}
+
+	h2{
+		font-size:20px;
+		color:#fcc02a;
+	}
+
+	p{
+		color:#7b8f8e;
+  }
+
+}
+
 
 /* ----------- Monitors larger than 1200px wide ----------- */
 @media (min-width: 1200px) {
+	body{
+		margin:0 auto;
+	}
+	header{
+		width:100%;
+		max-width:440px;
+		margin:0 auto;
+	}
 
+	.box1{
+		float:left;
+	}
+
+	.box2{
+		float:right;
+	}
+
+	main{
+	clear:both;
+	}
+
+	h1{
+		margin:0;
+		color:#6e4b61;
+	}
+
+	h2{
+		font-size:20px;
+		color:#cabd61;
+	}
+
+	p{
+		color:#c19e74;
+	}
 }
